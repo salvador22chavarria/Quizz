@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                         boton2.setVisibility(View.GONE);
                         boton3.setVisibility(View.GONE);
                         orden.setVisibility(View.GONE);
-                        puntaje.setVisibility(View.GONE);
+                        puntaje.setVisibility(View.VISIBLE);
                         logo.setVisibility(View.GONE);
                         start.setVisibility(View.GONE);
                         fin.setVisibility(View.VISIBLE);
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                         boton2.setVisibility(View.GONE);
                         boton3.setVisibility(View.GONE);
                         orden.setVisibility(View.GONE);
-                        puntaje.setVisibility(View.GONE);
+                        puntaje.setVisibility(View.VISIBLE);
                         logo.setVisibility(View.GONE);
                         start.setVisibility(View.GONE);
                         fin.setVisibility(View.VISIBLE);
@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
                         boton2.setVisibility(View.GONE);
                         boton3.setVisibility(View.GONE);
                         orden.setVisibility(View.GONE);
-                        puntaje.setVisibility(View.GONE);
+                        puntaje.setVisibility(View.VISIBLE);
                         logo.setVisibility(View.GONE);
                         start.setVisibility(View.GONE);
                         fin.setVisibility(View.VISIBLE);
