@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +69,44 @@ public class MainActivity extends AppCompatActivity {
         contador=0;
         update(contador);
 
+
+
     }
+
+    public void point(){
+        if(puntos ==1)
+        {
+            puntaje.setText("tu puntaje es: 0");
+            puntos=0;
+        }
+        else if(puntos==2)
+        {
+            puntaje.setText("tu puntaje es: 0");
+            puntos=0;
+        }
+        else if(puntos ==0)
+        {
+            puntaje.setText("tu puntaje es: 0");
+            puntos=0;
+        }
+        else if(puntos == 3)
+        {
+            puntaje.setText("tu puntaje es: 2");
+
+            puntos =2;
+        }
+        else
+        {
+            puntos=puntos-2;
+            puntaje.setText("tu puntaje es:"+String.valueOf(puntos));
+        }
+
+    }
+
+
+
+
+
     public void update(int a ){
         final question e= (question)questiones.get(a);
         orden.setText(""+(a+1)+ " "+e.getPregunta());
@@ -134,11 +173,16 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else{
-                    puntaje.setText("tu puntaje es: "+(puntos=puntos-2));
+                    point();
                 }
 
+
+
             }
+
+
         });
+
         boton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -166,8 +210,9 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else{
-                    puntaje.setText("tu puntaje es: "+(puntos=puntos-2));
+                    point();
                 }
+
 
             }
         });
@@ -199,7 +244,7 @@ public class MainActivity extends AppCompatActivity {
 
                 }
                 else{
-                    puntaje.setText("tu puntaje es: "+(puntos=puntos-2));
+                    point();
                 }
 
             }
